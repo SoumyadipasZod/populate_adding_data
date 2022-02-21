@@ -1,0 +1,32 @@
+<%- include("partial/head") %>
+
+
+<div class="container">
+    <%- include("partial/nav") %>
+    <h2>Demonstrate The Concept Of Populate In Mongoose</h2>
+    <form action="/add-movies" method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Enter Movie Name</label>
+                    <input type="text" class="form-control" name="movie" placeholder="Enter Movie" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Enter Actor Name</label>
+                    <input type="text" class="form-control" name="actor" placeholder="Enter Actor" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Enter Director Name</label>
+                    <input type="text" class="form-control" name="director" placeholder="Enter Director" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Add</button>
+        </div>
+    </form>
+</div>
+
+<%- include("partial/bottom") %>
